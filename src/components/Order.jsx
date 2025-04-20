@@ -16,7 +16,11 @@ function Order({setPlaceOrder,placeOder}) {
     const [address, setAddress] = useState('')
 
     
-    
+    function SubmitOrder(e){
+      e.preventDefault()
+      setOrderPlaced(true)
+      
+  }
 
   return (
     <ModalBg>
@@ -58,7 +62,7 @@ function Order({setPlaceOrder,placeOder}) {
                   </div>
 
 
-                  <form action="" className='flex  w-full md:flex-row flex-col' >
+                  <form action="" className='flex  w-full md:flex-row flex-col'  onSubmit={SubmitOrder}>
                   <div className="info_a flex flex-col md:w-1/2 w-full justify-center ">
 
 
