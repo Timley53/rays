@@ -10,7 +10,9 @@ function Spaces() {
             <div className="right_gradient mx-4 w-[200px] h-[10px] rounded-2xl hidden md:flex"/>
         </div>
         <p className='md:text-center text-[.90rem] md:w-[60%] w-[90%] md:mx-auto my-4 p-2'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore velit natus repellendus repudiandae dignissimos est asperiores fugit dicta, repellat rem odit at ipsa ducimus harum molestiae rerum tempore explicabo voluptates, nostrum quae. Consequuntur esse cum, molestiae necessitatibus harum maiores repellat labore eligendi molestias blanditiis unde, id ea maxime fugiat ipsa!
+        Experience the Warmth of Our Space, From cozy candlelit dinners
+to lively gatherings, our restaurant is designed for unforgettable
+moments. Step inside and feel the ambiance.
         </p>
 
         <div className="images_of_space md:w-[80%] w-[95%] flex mx-auto justify-between  my-10 flex-col md:flex-row items-center md:items-start">

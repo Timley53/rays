@@ -11,7 +11,7 @@ function Footer() {
         <div className="flex  justify-between items-start w-[90%] mx-auto mt-10 mb-5">
         <div className="rays w-[30%]">
             <h1>Rays</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore </p>
+            <p>Great food, even better experiences. </p>
         </div>
         <div className="company w-[15%] md:flex flex-col hidden">
             <h1>Company</h1>

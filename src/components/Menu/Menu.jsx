@@ -8,7 +8,7 @@ function Menu() {
     const [fullMenu, setFullMenu] = useState(false)
   return (
     <section className='bg-white py-20 w-screen h-full text-black p-4
-     overflow-x-hidden'>
+     overflow-x-hidden' id='Menu'>
            <div className="head flex justify-between p-2 md:w-[85%] mx-auto items-center mb-5 ">
             <h2 className='text-2xl'>Our Menu</h2>
 

@@ -12,11 +12,17 @@ import Spaces from './components/Spaces'
 import Visit_us from './components/Visit_us'
 import Footer from './components/Footer'
 
-function App() {
-  const [count, setCount] = useState(0)
+import {ResOrderContext} from './components/Context'
 
+function App() {
+  const [reservation, setRes] = useState([])
+  const [order, setOrder] = useState([])
+  
+  
   return (
+    <ResOrderContext.Provider value={{reservation, setRes, order, setOrder}}>
     <>
+
       <div className=''>
         <Header/>
         <Hero/>
@@ -29,6 +35,7 @@ function App() {
         <Footer/>
       </div>
     </>
+    </ResOrderContext.Provider>
   )
 }
 

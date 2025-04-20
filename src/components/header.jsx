@@ -9,7 +9,9 @@ function Header() {
     <header className='hidden md:flex bg-black fixed top-16 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50  justify-between items-center px-6 py-2 shadow-md w-[80%] mx-auto max-w-[700px] rounded-lg'>
 
         <div className="logo">
+          <a href="#home">
             Ray's
+          </a>
         </div>
 
         <nav>
@@ -61,7 +63,7 @@ export default Header
 
  function NavLinks({details, showNav, setShowNav}) {
           
-return ( <li className='list-none flex'>
-  <a onClick={()=>setShowNav(false)} href={`#${details}`} className="p-2 md:mx-2 navlink md:my-auto m-4 md:text-white text-black md:text-base text-[1.8rem] ">{details}</a>
-  </li>)
- }
+    return ( <li className='list-none flex'>
+    <a onClick={()=>setShowNav(false)} href={`#${details}`} className="p-2 md:mx-2 navlink md:my-auto m-4 md:text-white text-black md:text-base text-[1.8rem] ">{details}</a>
+    </li>)
+  }

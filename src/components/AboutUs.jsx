@@ -4,7 +4,7 @@ import about_us_image from '../assets/about_us.jpeg'
 function AboutUs() {
   return (
     <div className='w-screen md:h-screen h-full
-     flex flex-col md:flex-row bg-black md:pt-10 p-0 justify-center'>
+     flex flex-col md:flex-row bg-black md:pt-10 p-0 justify-center' id='About'>
         <div className="about_us flex flex-col justify-center items-start bg-[#000000] text-white md:w-[35%] md:mx-10 text-left order-2 md:order-1 p-4 ">
             <h1 className='text-4xl font-bold'>About Us</h1>
             <p className='text-lg text-white mt-4 md:max-w-[400px] w-[90%] py-5'>At <span className='font-bold text-[1.6rem]'>Rays</span>,  we believe great food brings people together. Our dishes are inspired by time
