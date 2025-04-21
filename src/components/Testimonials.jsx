@@ -8,7 +8,7 @@ function Testimonials() {
         <div className="header flex items-center justify-center">
             <div className="left_gradient hidden md:flex mx-4 w-[200px] h-[10px] rounded-2xl"/>
 
-            <h1 className='w-full md:w-auto text-left md:text-center'>Testimonials</h1>
+            <h1 className='w-full md:w-auto text-left md:text-center text-2xl'>Testimonials</h1>
             <div className="right_gradient hidden md:flex mx-4 w-[200px] h-[10px] rounded-2xl"/>
         </div>
 

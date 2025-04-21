@@ -5,7 +5,7 @@ function Visit_us() {
     <div className='w-screen bg-white h-full text-black flex flex-col py-10 items-center text-center p-4'>
                 <div className="head flex justify-center items-center w-full">
             <div className="left_gradient hidden md:flex mx-4 w-[200px] h-[10px] rounded-2xl"/>
-            <h1 className='w-full md:w-auto text-left'>Visit us or order online</h1>
+            <h1 className='w-full md:w-auto text-left text-2xl'>Visit us or order online</h1>
             <div className="right_gradient hidden md:flex mx-4 w-[200px] h-[10px] rounded-2xl"/>
         </div>
     <p className='md:w-[40%] text-left md:text-center '>Rays Restaurant 123 Victoria Island Avenue, Lagos, Nigeria</p>
