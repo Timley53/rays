@@ -44,7 +44,7 @@ function TestimonialCard({item}) {
             <div className="card flex flex-col w-[400px] min-w-[400px] h-[250px] rounded-xl p-4 m-4 bg-[#F8F8F8]">
                 <span className='text-5xl'><RiDoubleQuotesL/></span>
 
-                <p className='text-xs my-3 w-[90%] text-wrap'>{item.testimonial}</p>
+                <p className='text-xs my-3 w-[90%] h-[50%] text-wrap'>{item.testimonial}</p>
 
                 <div className="user_review flex items-center mt-4 justify-between w-full"> 
                     <div className="user_details flex py-4 items-center justify-start w-[80%]">
