@@ -9,7 +9,7 @@ function Header() {
     <header className='hidden md:flex bg-black fixed top-16 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50  justify-between items-center px-6 py-2 shadow-md w-[80%] mx-auto max-w-[700px] rounded-lg'>
 
         <div className="logo">
-          <a href="#home">
+          <a href="#Home">
             Ray's
           </a>
         </div>

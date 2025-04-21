@@ -3,7 +3,7 @@ import trufflesImg from '../../assets/truffles.jpeg'
 
 function MenuItem({item}) {
   return (
-    <div key={item} className='flex w-[30%] min-w-[300px] max-w-[300px] flex-col justify-start items-start py-2 mx-4'>
+    <div key={item} className='flex w-[30%] min-w-[250px] max-w-[250px] flex-col justify-start items-start py-2 mx-4'>
         <img src={item.img} alt="meal image" 
          className='h-[40%] max-h-[200px] w-full object-cover rounded-xl'/>
         <h2 className='font-semibold my-2'>{item.food}</h2>
