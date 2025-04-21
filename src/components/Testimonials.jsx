@@ -4,7 +4,7 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 
 function Testimonials() {
   return (
-    <div className='w-screen bg-white h-full text-black flex flex-col py-10 md:p-4'>
+    <div className='w-screen bg-white h-full text-black flex flex-col py-10 p-4'>
         <div className="header flex items-center justify-center">
             <div className="left_gradient hidden md:flex mx-4 w-[200px] h-[10px] rounded-2xl"/>
 
