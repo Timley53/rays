@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaStar } from "react-icons/fa";
 import { RiDoubleQuotesL } from "react-icons/ri";
+import AutoScrollMarquee from './Marquee';
 
 function Testimonials() {
+
+    const [mouseon, setmouseon] = useState(false)
   return (
     <div className='w-screen bg-white h-full text-black flex flex-col py-10 p-4'>
         <div className="header flex items-center justify-center">
@@ -12,9 +15,13 @@ function Testimonials() {
             <div className="right_gradient hidden md:flex mx-4 w-[200px] h-[10px] rounded-2xl"/>
         </div>
 
-<div className="marquee_content overflow-x-hidden w-full">
+<div className="marquee_content overflow-x-hidden w-full" onMouseEnter={() => setmouseon(true)} onMouseLeave={() => setmouseon(false)}>     
 
-        <div className="testimonial_cards flex flex-nowrap items-center justify-start md:w-[90%] w-full mx-auto h-full md:p-4 ">
+        <div className={` ${mouseon ? 'testimonial_cards_scroll' :"testimonial_cards"} flex flex-nowrap items-center justify-start md:w-[90%] w-full mx-auto h-full md:p-4 `}
+        
+        >
+            {/* <AutoScrollMarquee speed={2}> */}
+
             <TestimonialCard item={{name: 'Emily R', image: 'https://s3-alpha-sig.figma.com/img/38a2/4495/454e02789f38efe4cfb91abb19e84990?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=jUWP8v11TTtkZukByIAnIcv6mib3QyCU6E9DAF5CMsELWxwaGXLMDRwMeOKIEC3gB4mqb5dnMJs9QCOUAnGp93rulqejMhmg2KZQ8n2x0kbYApUve8dRoLlSzDcEQkxK99IG48D6UGKy-BLp9DEvaqzZF0MlZ7GgPOTOXVgzOEiArLChY7VaACg1uMTWlGgJj07~iNHqbhoRnfjlprdH5mWkaWSzmJlhgiYoF5in4~3kq8xOFeh~jiT2BoU0IFm8CwLNXmQol4i~3fmv8Q7TdP-CjILjgHF78lTjXuX0baPsPeh2I~-iLXkZPEewwWydJEg0ktu8gY-nd-1tD~nH1w__', testimonial: 'The atmosphere is so warm and inviting! From the lighting to the decor, every detail makes dining herea wonderful experience.'}}/>
 
 
@@ -28,6 +35,8 @@ function Testimonials() {
 
             <TestimonialCard item={{name: 'Sam Wilson', image: 'https://s3-alpha-sig.figma.com/img/151c/a36e/0a3d3fc0d34cf0d02f566ad377813e78?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Wl51MRjXONYY07h0AN1D~vV-Uu9dnC37~~nX9DrbjU0DJwi6eYVlgcjj3RhpDXrJy~UvRfqrf00ThRcASaQExCYil69MunObiEW1HQBK4ve~OGSqOzKj0OeTClyHAa4z2IZvBPuulW-fcq95uCWkE1KgcKzdOr3qQlRSbU6-IsSfZh4NgJcZrVthY2rbzL-zaGCJi13osJGdCCoUmNRhtRqzaNYTuHXdQpy8cvH1lvM~aGi9~zFJvPLeAWI6QiIJz~Be7gqRXfECZqJvYeoB7igkptl~kE8eeD8rP517k88JGBmwYgM7XaTP3mzJjH28vViTr4U0Jxnoek19B9MUdw__', testimonial: 'I loved every bite of my meal!'}}/>
         </div>
+        {/* </AutoScrollMarquee> */}
+
 </div>
 
 

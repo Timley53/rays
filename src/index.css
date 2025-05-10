@@ -132,10 +132,115 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 1) 10%, rgba(224, 224, 224, 1) 
   /* display: inline-block;   */
   /* padding-left: 100%;   */
   animation: marquee 10s linear infinite ;  
-  animation-delay: 2s;
-}  
+  animation-delay: 1s;
+} 
+
+.testimonial_cards_scroll {  
+  overflow-x: auto;
+}
+.testimonial_cards_scroll::-webkit-scrollbar {
+  /* display: none; */
+  height: 10px;
+  background-color: #000000;
+}
+.testimonial_cards_scroll::-webkit-scrollbar-track {
+  /* display: none; */
+  background-color: #ffffff;
+  height: 10px;
+}
+.testimonial_cards_scroll::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 20px;
+  width: 5px;
+}
+
+
+
+
+
+
 
 @keyframes marquee {  
   0%   { transform: translateX(0%); }  
   100% { transform: translateX(-100%); }  
 }  
+
+.metric{
+
+}
+
+
+.metric {
+  /* display: inline-block; */
+  animation: marquee 5s forwards infinite;
+  animation-timing-function: normal;
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(50%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-70%);
+  }
+}
+
+.auto-scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  cursor: grab;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.auto-scroll-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome/Safari */
+}
+
+.auto-scroll-content {
+  display: flex;
+}
+
+.item {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin: 0 10px;
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+
+
+.reservation{
+  /* overflow-y: scroll !important; */
+}
+
+
+
+@media screen and (max-width: 568px) {
+  
+  .testimonial_cards_scroll::-webkit-scrollbar {
+    display: none;
+    height: 0px;
+    background-color: #000000;
+  }
+  .testimonial_cards_scroll::-webkit-scrollbar-track {
+    display: none;
+    background-color: #ffffff;
+    height: 0px;
+  }
+
+  .pickup_radio{
+    width: 90px !important;
+  }
+  .reservation{
+    overflow-y: scroll !important;
+  }
+}

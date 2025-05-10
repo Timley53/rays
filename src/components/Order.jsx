@@ -23,7 +23,7 @@ function Order({setPlaceOrder,placeOder}) {
   }
 
   return (
-    <ModalBg>
+    <div className="bg-white z-[100] h-auto min-h-[100vh] w-screen fixed left-0 top-0 flex justify-center items-center overflow-y-scroll">
 
 <>
 {
@@ -49,12 +49,12 @@ function Order({setPlaceOrder,placeOder}) {
                   <div className="flex justify-between w-full">
                   <h3 className='self-start my-3 text-base'>Customers Info</h3>
                   <div className="flex w-[50%] justify-between items-center">
-                      <span>Delivery</span>
+                      <span className='mr-2'>Delivery</span>
 
                       <div className="pickup w-[60%] flex items-center justify-between">
-                        <span>Pickup</span>
+                        <span className=''>Pickup</span>
 
-                        <div className={`${pickup ? 'bg-black' : ' bg-slate-300'} h-[25px] w-[50px]  rounded-full p-1 flex  mx-2 `} onClick={()=>setPickup(!pickup)}>
+                        <div className={` pickup_radio ${pickup ? 'bg-black' : ' bg-slate-300'} md:h-[25px] md:w-[50px] h-[30px]  rounded-full p-1  mx-2 `} onClick={()=>setPickup(!pickup)}>
                           <span className={`h-full w-[50%] bg-white rounded-full ${pickup ? ' translate-x-[90%]' : ' translate-x-[0]'}`}></span>
                         </div>
                       </div>
@@ -154,7 +154,7 @@ function Order({setPlaceOrder,placeOder}) {
 
 }
 </> 
-</ModalBg>
+</div>
 
   )
 }

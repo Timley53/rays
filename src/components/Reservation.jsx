@@ -26,31 +26,35 @@ function Reservation({
         }
 
   return (
-    <ModalBg>
+    <div className="bg-white z-[100] h-auto min-h-[100vh] w-screen fixed left-0 top-0 flex justify-center items-center overflow-y-scroll">
+
 
         {resComplete && <div className='md:w-[400px] w-[90%] rounded-lg h-[300px] bg-white flex flex-col text-black justify-center items-center'>
             
                 <h2 className='my-4'>Reservation Successfully Booked</h2>
-                <button className='p-3 px-6 border-2 border-black my-4 rounded-lg' onClick={()=>{
+                <button className='p-3 px-6 border-2 border-black my-4 rounded-lg' onClick={()=> {
                     setShowRes(false)
-                    SetResComplete(false)
+                    SetResComplete(false) 
                 }}>
                     Goto Home
                 </button>
 
-             </div>}
+             </div> 
+            
+        }
 
-
+        {
+            !resComplete &&
+            <div className="reservation w-[100%] md:w-[680px] bg-white overflow-y-scroll">
       {
-        !resComplete &&
-        <div className=' w-[90%] max-w-[650px] md:h-[490px] h-[95%] bg-white rounded-lg flex flex-col justify-center items-center p-4 px-6 text-black '>
-          <div className="header flex justify-between items-center w-full mb-4">
+        <div className='w-[100%] max-w-[650px] md:h-[490px] md:min-h-[490px] h-auto bg-white rounded-lg flex flex-col justify-center items-center p-2 md:p-4 px-6 text-black reservation'>
+          <div className="header flex justify-between items-center w-full mb-4 my-2 md:my-auto">
             <h3 className='text-xl'>Make a Reservation</h3>
 
             <button className='text-xl cursor-pointer' onClick={()=>setShowRes(!showRes)}><ImCross/></button>
           </div>
             <h3 className='self-start my-3 text-base'>Customers Info</h3>
-        <form action="" className='flex  w-full md:flex-row flex-col' onSubmit={SubmitRes}>
+        <form action="" className='flex h-full w-full md:flex-row flex-col' onSubmit={SubmitRes}>
             <div className="info_a flex flex-col md:w-1/2 w-full justify-center ">
 
                 <label htmlFor="name" className='w-full mb-1 text-[.96rem] flex flex-col'>
@@ -60,7 +64,7 @@ function Reservation({
 
                 <label htmlFor="" className='w-full mb-1 text-[.96rem] flex flex-col'>
                     <span className='my-2 text-sm'>Phone Number</span>
-                <input type="text" name="phone" id="phone" placeholder='+234'  value={phoneNumber} onChange={(e)=>setPhoneNumber(+e.target.value)} className='w-full p-2 border-[1px] border-slate-500 rounded-md ' required/>
+                <input type="text" name="phone" id="phone" placeholder='+234'  value={phoneNumber} onChange={(e)=>setPhoneNumber(+e.target.value)} className='w-full p-2 border-[1px] border-slate-500 rounded-md' required/>
                 </label>
 
                 {/* date time */}
@@ -108,7 +112,7 @@ function Reservation({
                 </select>
                 </label> 
 
-                <button className='p-2 px-4 rounded-lg hover:bg-black/50 hover:text-white border-2 border-black transition-all mt-4'>
+                <button className='p-2 px-4  rounded-lg hover:bg-black/50 hover:text-white border-2 border-black transition-all mt-4'>
                     Book Reservation
                 </button> 
 
@@ -118,9 +122,13 @@ function Reservation({
             
         </div>
 }
-    </ModalBg>
+                
+            </div>
+        }
+</div>
 
-  )
+)
 }
+
 
 export default Reservation

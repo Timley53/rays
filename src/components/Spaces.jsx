@@ -19,7 +19,7 @@ moments. Step inside and feel the ambiance.
              <div className="first_col flex flex-col md:w-[35%] w-full md:max-w-[400px] h-[400px]">
                 <img src={spaceImages.col_1_1.url} alt="" className='w-full object-cover h-full max-h-[150px] rounded-2xl'/>
 
-                <div className="row flex w-full h-[250px] justify-between my-3" >
+                <div className="row flex w-full h-[250px] justify-between my-4 mb-0  md:my-3" >
                     <img src={spaceImages.col_1_2.url} alt="" className='w-[48%] rounded-xl object-cover '/>
                     <img src={spaceImages.col_1_3.url} alt="" className='w-[48%] rounded-xl object-cover '/>
                 </div>
@@ -28,14 +28,14 @@ moments. Step inside and feel the ambiance.
                 </div>   
 
 
-             <div className="second_col first_col flex flex-col md:w-[37%] w-full md:max-w-[400px] h-[400px] my-2 md:my-auto  mx-6">
+             <div className="second_col first_col flex flex-col md:w-[37%] w-full md:max-w-[400px] h-[400px] my-6 mb-4 md:my-auto  mx-6">
                 <img src={spaceImages.col_2.url} alt="restaurant's image"  className='w-full rounded-2xl h-full object-cover'/>
                 </div>   
 
 
              <div className="third_col flex flex-col md:w-[30%] w-full md:max-w-[400px] h-[400px]">
-                <img src={spaceImages.col_3_1.url} alt="" className='w-full object-cover max-h-[200px] rounded-2xl  my-2'/>
-                <img src={spaceImages.col_3_2.url} alt="" className='w-full object-cover max-h-[200px]  rounded-2xl '/>
+                <img src={spaceImages.col_3_1.url} alt="" className='w-full object-cover max-h-[200px] rounded-2xl  mb-2'/>
+                <img src={spaceImages.col_3_2.url} alt="" className='w-full object-cover max-h-[200px]  rounded-2xl mt-2 md:mt-0 '/>
                 </div>   
         </div>
     

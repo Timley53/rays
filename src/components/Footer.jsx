@@ -52,15 +52,15 @@ function Footer() {
                 <p>Great food, even better experiences</p>
             </div>
 
-            <div className="navs mt-7 flex w-[80%] justify-between">
-            <a href="" className='my-1 hover:underline'>Home</a>
-            <a href="" className='my-1 hover:underline'>Menu</a>
-            <a href="" className='my-1 hover:underline'>About</a>
-            <a href="" className='my-1 hover:underline'>Reservation</a>
-            <a href="" className='my-1 hover:underline'>Contact</a>
+            <div className="navs mt-7 flex w-[95%] justify-between">
+            <a href="" className='my-1  mx-0.5 hover:underline'>Home</a>
+            <a href="" className='my-1 mx-0.5  hover:underline'>Menu</a>
+            <a href="" className='my-1 mx-0.5  hover:underline'>About</a>
+            <a href="" className='my-1 mx-0.5  hover:underline'>Reservation</a>
+            <a href="" className='my-1 mx-0.5  hover:underline'>Contact</a>
             </div>
 
-            <div className="socials_icon flex w-[30%] justify-between items-center my-4 text-3xl">
+            <div className="socials_icon flex w-[50%] justify-between items-center my-4 text-3xl">
                 <span><AiFillInstagram/></span>
                 <span><AiFillTikTok/></span> 
                 <span><FaXTwitter/></span>
